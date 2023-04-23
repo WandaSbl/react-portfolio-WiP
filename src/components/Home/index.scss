@@ -1,0 +1,63 @@
+$paletteNoir :  #2b2d42;
+$paletteBleu : #92DCE5 ;
+$paletteBlanc : #F8F7F9 ;
+$paletteJaune : #F7EC59 ;
+$paletteRose: #FF66D8 ;
+
+.home-page {
+    .text-zone{
+        position:absolute;
+        left:10%;
+        top:50%;
+        transform: translateY(-50%);
+        width:50%;
+        max-height:90%;
+    }
+    h1 {
+        color: $paletteRose;
+        font-size: 80px;
+        margin:0;
+        font-family:"Coolvetica";
+
+        img{
+            width: 100px;
+            margin-left:20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 0.2s linear both;
+            animation-delay: 1.6s;
+        }
+    }
+
+    h2 {
+        color:$paletteBleu;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 4px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .flat-button {
+        color: $paletteJaune;
+        font-size: 13px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid $paletteJaune;
+        margin-top: 25px;
+        float:left;
+        animation: fadeIn 1s 1.8s backwards;
+        white-space: nowrap;
+
+        &:hover{
+            background:$paletteJaune;
+            color: $paletteNoir;
+        }
+    }
+
+}
+
